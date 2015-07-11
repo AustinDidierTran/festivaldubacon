@@ -3,3 +3,5 @@ var app = angular.module('app', [
 ]);
 
 var hello;
+
+var bonjour;
