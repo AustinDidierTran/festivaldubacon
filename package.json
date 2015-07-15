@@ -1,0 +1,31 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "Website for the Festival du Bacon, event in Sherbrooke",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.1",
+    "jade": "^1.11.0",
+    "node": "^0.0.0",
+    "nodemon": "^1.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "engine":{
+    "node": "0.10.x",
+    "npm": "1.4.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/AustinDidierTran/festivaldubacon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AustinDidierTran/festivaldubacon/issues"
+  },
+  "homepage": "https://github.com/AustinDidierTran/festivaldubacon"
+}
