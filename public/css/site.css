@@ -1,0 +1,34 @@
+#header{
+    height:280px;
+    background-image:url("/app/images/header_background.jpg");
+    background-repeat: no-repeat;
+    background-position:center top;
+    background-color:black;
+    width:100vw;
+}
+#header-content{
+    width: 990px;
+    height:280px;
+    margin-left:auto;
+    margin-right: auto;
+}
+#header-image{
+    width:990px;
+    height:220px;
+}
+#header-tabs{
+    width:990px;
+    height:60px;
+}
+#logo-image{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    padding-top:30px;
+}
+.body-content{
+    margin-left:auto;
+    margin-right:auto;
+    width:990px;
+    
+}
