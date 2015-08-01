@@ -30,12 +30,42 @@ festivalControllers.controller('headerController', ['$scope', function($scope){
     ];
 }]);
 
-festivalControllers.controller('kiosqueController', ['$scope', '$http', '$rootScope',
+festivalControllers.controller('programmationController', ['$scope', '$http', '$rootScope',
   function ($scope, $http, $rootScope) {
       
-    $scope.testValue = "Test Value Je serai juste là avec kiosque";
+    $scope.testValue = "Test Value #Programmation";
       
-    /* Code to be reused later on
+  }]);
+
+festivalControllers.controller('kiosquesController', ['$scope', '$http', '$rootScope',
+  function ($scope, $http, $rootScope) {
+      
+    $scope.testValue = "Test Value #Kiosque";
+      
+  }]);
+  
+  festivalControllers.controller('bacondamourController', ['$scope', '$http', '$rootScope',
+  function ($scope, $http, $rootScope) {
+      
+    $scope.testValue = "Test Value #Bacondamour";
+      
+  }]);
+  
+  festivalControllers.controller('socialController', ['$scope', '$http', '$rootScope',
+  function ($scope, $http, $rootScope) {
+      
+    $scope.testValue = "Test Value #Social";
+      
+  }]);
+  
+  festivalControllers.controller('contactController', ['$scope', '$http', '$rootScope',
+  function ($scope, $http, $rootScope) {
+      
+    $scope.testValue = "Test Value #Contact";
+      
+  }]);
+  
+  /* Code to be reused later on
     
     $http.get('phones/phones.json').success(function(data) {
       $scope.phones = data;
@@ -44,4 +74,3 @@ festivalControllers.controller('kiosqueController', ['$scope', '$http', '$rootSc
     $scope.orderProp = 'age';
   
     */
-  }]);

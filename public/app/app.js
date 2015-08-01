@@ -7,25 +7,29 @@ app.config(['$routeProvider',
   function($routeProvider) {
       console.log('configurating routes...');
     $routeProvider
+      .when('/', {
+        templateUrl: '/partials/programmation',
+        controller: 'programmationController'
+      })
       .when('/programmation', {
         templateUrl: '/partials/programmation',
-        controller: 'kiosqueController'
+        controller: 'programmationController'
       })
       .when('/kiosques', {
         templateUrl: '/partials/kiosques',
-        controller: 'kiosqueController'
+        controller: 'kiosquesController'
       })
       .when('/bacondamour', {
         templateUrl: '/partials/bacondamour',
-        controller: 'kiosqueController'
+        controller: 'bacondamourController'
       })
       .when('/social', {
         templateUrl: '/partials/social',
-        controller: 'kiosqueController'
+        controller: 'socialController'
       })
       .when('/contact', {
         templateUrl: '/partials/contact',
-        controller: 'kiosqueController'
+        controller: 'contactController'
       })
       .when('/unknown', {
         templateUrl: '/partials/unknown'
