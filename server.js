@@ -10,11 +10,12 @@ app.set('view engine', 'jade');
 app.use(express.static(rootPath + '/public'));
 
 app.get('/partials/*', function(req, res) {
-    console.log('Rendering partial...');
+    console.log('Rendering partial...' + req.params[0]);
     res.render(__dirname + '/public/views/partials/' + req.params[0]);
 });
 
 app.get('*', function(req, res){
+    console.log('rendering something here');
     res.render('index');
 })
 

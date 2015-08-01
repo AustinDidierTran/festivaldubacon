@@ -7,14 +7,12 @@
     width:100vw;
 }
 #header-content{
-    width: 990px;
     height:280px;
-    margin-left:auto;
-    margin-right: auto;
 }
 #header-image{
-    width:990px;
-    height:220px;
+    margin-left:auto;
+    margin-right:auto;
+    height:200px;
 }
 #header-tabs{
     width:990px;
@@ -31,4 +29,28 @@
     margin-right:auto;
     width:990px;
     
+}
+.navbar-default{
+    background-color:black;
+    border-color:black;
+    border-radius:0;
+}
+.tab > span{
+    color:white;
+}
+.tab a{
+    color:white;
+}
+.tabs-container{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tab{
+    display: table-cell;
+    text-align: center;
+}
+.navbar{
+    margin-bottom: 0;
 }
