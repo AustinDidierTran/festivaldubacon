@@ -4,8 +4,9 @@ html(ng-app="app")
         title Festival du Bacon
         include css
         base(href="/")
-    body
-        span Salut
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+
+    body(unresolved)
+        include header
         div(ng-view)
         include scripts
-            

@@ -1,0 +1,8 @@
+div.container
+    div(ng-repeat="restaurant in restaurants")
+        h3 {{restaurant.name}}
+        h4 {{restaurant.address.no}} {{restaurant.address.street}} - {{restaurant.address.city}}
+        a(href="{{restaurant.website}}") Site web
+        br
+        a(href="{{restaurant.facebook}}") Facebook
+        

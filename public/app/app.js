@@ -7,11 +7,30 @@ app.config(['$routeProvider',
   function($routeProvider) {
       console.log('configurating routes...');
     $routeProvider
-      .when('/kiosque', {
-        templateUrl: '/partials/kiosque',
-        controller: 'kiosqueController'
+      .when('/', {
+        templateUrl: '/partials/programmation',
+        controller: 'programmationController'
+      })
+      .when('/programmation', {
+        templateUrl: '/partials/programmation',
+        controller: 'programmationController'
+      })
+      .when('/kiosques', {
+        templateUrl: '/partials/kiosques',
+        controller: 'kiosquesController'
+      })
+      .when('/bacondamour', {
+        templateUrl: '/partials/bacondamour',
+        controller: 'bacondamourController'
+      })
+      .when('/contact', {
+        templateUrl: '/partials/contact',
+        controller: 'contactController'
+      })
+      .when('/unknown', {
+        templateUrl: '/partials/unknown'
       })
       .otherwise({
-        redirectTo: '/kiosque'
+        redirectTo: '/unknown'
       });
   }]);

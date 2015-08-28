@@ -1,0 +1,57 @@
+#header{
+    height:280px;
+    background-image:url("/app/images/header_background.jpg");
+    background-repeat: no-repeat;
+    background-position:center top;
+    background-color:black;
+    width:100vw;
+}
+#header-content{
+    height:280px;
+}
+#header-image{
+    margin-left:auto;
+    margin-right:auto;
+    height:200px;
+}
+#header-tabs{
+    width:990px;
+    height:60px;
+}
+#logo-image{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    padding-top:30px;
+}
+.body-content{
+    margin-left:auto;
+    margin-right:auto;
+    width:990px;
+    
+}
+.navbar-default{
+    background-color:black;
+    border-color:black;
+    border-radius:0;
+}
+.tab > span{
+    color:white;
+}
+.tab a{
+    color:white;
+    text-decoration:none;
+}
+.tabs-container{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tab{
+    display: table-cell;
+    text-align: center;
+}
+.navbar{
+    margin-bottom: 0;
+}
