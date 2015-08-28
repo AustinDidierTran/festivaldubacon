@@ -1,2 +1,9 @@
 div.container
-    h2 Programmation {{testValue}}
+    h2 Programmation
+    div(ng-repeat="date in dates")
+        h3(ng-bind="date.name")
+        div(ng-repeat="venue in date.venues")
+            h4(ng-bind="venue.name")
+            div(ng-repeat="show in venue.shows")
+                h5(ng-bind="show.band")
+                h5(ng-bind="show.time")

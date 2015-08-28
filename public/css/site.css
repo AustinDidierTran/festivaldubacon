@@ -40,6 +40,7 @@
 }
 .tab a{
     color:white;
+    text-decoration:none;
 }
 .tabs-container{
     display: table;

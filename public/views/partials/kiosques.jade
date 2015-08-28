@@ -1,2 +1,13 @@
 div.container
-    h2 Kiosque {{testValue}}
+    h2 Kiosques
+    div(ng-repeat="kiosque in kiosques")
+        h3(ng-bind="kiosque.name")
+        h4(ng-bind="kiosque.description")
+        h4(ng-bind="kiosque.phone.business")
+        h3(ng-show="kiosque.products") Produits
+        div(ng-repeat="product in kiosque.products")
+            h4 {{product.name}}
+            p {{product.description}}
+        
+        
+        

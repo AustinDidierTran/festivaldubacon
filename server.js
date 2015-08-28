@@ -1,25 +1,17 @@
 var express = require('express'),
     path = require('path'),
-    rootPath = path.normalize(__dirname),
-    app = express();
+    rootPath = path.normalize(__dirname);
 
-//Sets the view engine from HTML to Jade. To learn how to use jade, see http://jade-lang.com/tutorial/
-app.set('view engine', 'jade');
+var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
-//Sets the rootPath to public for imports
-app.use(express.static(rootPath + '/public'));
+var app = express();
 
-app.get('/partials/*', function(req, res) {
-    console.log('Rendering partial...' + req.params[0]);
-    res.render(__dirname + '/public/views/partials/' + req.params[0]);
-});
+var config = require('./server/config/config')[env];
 
-app.get('*', function(req, res){
-    console.log('rendering something here');
-    res.render('index');
-})
+require('./server/config/express')(app, config);
 
-//port equals environment port or 80 if null
-var port = process.env.PORT || 80;
+require('./server/config/routes')(app);
 
-app.listen(port);
+require('./server/config/parse')(config);
+
+app.listen(config.port);

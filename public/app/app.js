@@ -23,10 +23,6 @@ app.config(['$routeProvider',
         templateUrl: '/partials/bacondamour',
         controller: 'bacondamourController'
       })
-      .when('/social', {
-        templateUrl: '/partials/social',
-        controller: 'socialController'
-      })
       .when('/contact', {
         templateUrl: '/partials/contact',
         controller: 'contactController'
